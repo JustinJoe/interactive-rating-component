@@ -1,12 +1,19 @@
+import { useState } from "react"
+import { useNavigate } from "react-router-dom";
 import star from "../images/icon-star.svg"
 
 function CardRating() {
-    const handleChange = () => {
+    const [rating, setRating] = useState(null);
+    const navigate = useNavigate();
+
+    const handleChange = (event) => {
         // when clicked toggle className selected
+        setRating(event.target.value)
     }
 
     const handleSubmit = (event) => {
-        event.preventDefault()
+        event.preventDefault();
+        navigate("/complete");    
     }
 
     return (
@@ -19,11 +26,11 @@ function CardRating() {
                 improve our offering!
             </p>
             <div>
-                <button onClick={handleChange} className="rating">1</button>
-                <button onClick={handleChange} className="rating">2</button>
-                <button onClick={handleChange} className="rating">3</button>
-                <button onClick={handleChange} className="rating">4</button>
-                <button onClick={handleChange} className="rating">5</button>
+                <button onClick={handleChange} value={1} className="rating">1</button>
+                <button onClick={handleChange} value={2} className="rating">2</button>
+                <button onClick={handleChange} value={3} className="rating">3</button>
+                <button onClick={handleChange} value={4} className="rating">4</button>
+                <button onClick={handleChange} value={5} className="rating">5</button>
             </div>
             <button onClick={handleSubmit} type="submit">Submit</button>
         </div>
