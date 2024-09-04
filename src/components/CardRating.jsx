@@ -13,7 +13,7 @@ function CardRating() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        navigate("/complete");    
+        navigate("/complete", {state: {rate: rating}});    
     }
 
     return (
