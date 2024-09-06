@@ -6,7 +6,7 @@ function CardSuccess() {
     const {rate} = location.state;
 
     return (
-        <div>
+        <div className="card">
             <img src={thanks} alt="" />
             <button className="rating">You selected {rate} out of 5</button>
             <h1>Thank you!</h1>

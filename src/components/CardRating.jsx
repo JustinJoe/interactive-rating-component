@@ -17,7 +17,7 @@ function CardRating() {
     }
 
     return (
-        <div>
+        <div className="card">
             <img src={star} alt="" />
             <h1>How did we do?</h1>
             <p>
