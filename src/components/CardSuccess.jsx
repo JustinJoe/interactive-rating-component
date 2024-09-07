@@ -6,9 +6,9 @@ function CardSuccess() {
     const {rate} = location.state;
 
     return (
-        <div className="card">
+        <div className="card success">
             <img src={thanks} alt="" />
-            <button className="rating">You selected {rate} out of 5</button>
+            <button className="user-rating">You selected {rate} out of 5</button>
             <h1>Thank you!</h1>
             <p>
                 We appreciate you taking the time to give a 
