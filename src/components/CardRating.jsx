@@ -8,7 +8,7 @@ function CardRating() {
 
     const handleChange = (event) => {
         // when clicked toggle className selected
-        setRating(event.target.value)
+        setRating(event.target.value);
     }
 
     const handleSubmit = (event) => {
@@ -32,7 +32,7 @@ function CardRating() {
                 <button onClick={handleChange} value={4} className="rating">4</button>
                 <button onClick={handleChange} value={5} className="rating">5</button>
             </div>
-            <button onClick={handleSubmit} type="submit">Submit</button>
+            <button onClick={handleSubmit} className="submit" type="submit">Submit</button>
         </div>
     )
 }

@@ -41,7 +41,6 @@ img {
 }
 
 .user-rating {
-  /* background-color: var(--dblue); */
   color: var(--orange);
   border: 1px solid var(--dblue);
   border-radius: 5px;
@@ -67,7 +66,7 @@ img {
   border-radius: 2em;
 }
 
-[type="submit"] {
+.submit {
   background-color: var(--orange);
   color: var(--white);
   margin-top: 2em;
@@ -79,6 +78,24 @@ img {
   border: 1px solid var(--orange);
 }
 
-@media (min-width: 376px) {
+@media (min-width: 1440px) {
+  .card {
+    width: 20%;
+  }
 
+  .rating:hover {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+
+  .selected {
+    background-color: var(--mgrey);
+    color: var(--white);
+  }
+
+  .submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    border: 1px solid var(--white);
+  }
 }
